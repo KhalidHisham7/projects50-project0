@@ -1,0 +1,68 @@
+
+      .container {
+        margin-top: 50px;
+      }
+
+      .img {
+        width: inherit;
+        height: inherit;
+      }
+
+      li > a:visited {
+        color: black;
+      }
+
+      li > a {
+        color: white;
+      }
+
+      @media (min-width: 770px) {
+        .margin {
+          margin-left: 35px;
+        }
+        .margin-more {
+          margin-left: 110px;
+        }
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: #8FD4EB;
+      }
+
+      .inner-container {
+        margin-top: 10px;
+      }
+
+      .inner-container:hover .overlay {
+        opacity: 0.7;
+      }
+
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+
+      #row {
+        margin-top: 15px;
+      }
+      #img {
+        width: inherit;
+        height: inherit;
+      }

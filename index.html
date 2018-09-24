@@ -15,7 +15,7 @@
         height: inherit;
       }
 
-      @media (min-width: 750px) {
+      @media (min-width: 770px) {
         .margin {
           margin-left: 35px;
         }
@@ -23,6 +23,36 @@
           margin-left: 110px;
         }
       }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #008CBA;
+      }
+
+      .container1:hover .overlay {
+        opacity: 1;
+      }
+
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
     </style>
     <title>My Portfolio</title>
   </head>
@@ -51,15 +81,19 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-8 col-sm-6">
+          <div class="col-8 col-sm-6 container1">
               <img src="main page blog.png" class="img" alt="">
+              <div class="overlay">
+                <div class="text">
+                  <a href="#">Hello</a>
+                </div>
+              </div>
           </div>
           <div class="col-8 col-sm-6">
               <img src="main page bp.png" class="img" alt="">
           </div>
           <div class="col-8 col-sm-6">
               <img src="main page quote.png" class="img" alt="">
-              <p>hello</p>
           </div>
         </div>
       </div>
